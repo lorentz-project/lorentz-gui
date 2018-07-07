@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -100,9 +100,9 @@ int main(int argc, char *argv[])
 
     MainApp app(argc, argv);
 
-    app.setApplicationName("monero-gui");
-    app.setOrganizationDomain("getmonero.org");
-    app.setOrganizationName("monero-project");
+    app.setApplicationName("lorentz-gui");
+    app.setOrganizationDomain("getlorentz.org");
+    app.setOrganizationName("lorentz-project");
 
 #if defined(Q_OS_LINUX)
     if (isDesktop) app.setWindowIcon(QIcon(":/images/appicon.ico"));
@@ -119,11 +119,11 @@ int main(int argc, char *argv[])
     parser.addHelpOption();
     parser.process(app);
 
-    Monero::Utils::onStartup();
+    Lorentz::Utils::onStartup();
 
     // Log settings
     const QString logPath = getLogPath(parser.value(logPathOption));
-    Monero::Wallet::init(argv[0], "monero-wallet-gui", logPath.toStdString().c_str(), true);
+    Lorentz::Wallet::init(argv[0], "lorentz-wallet-gui", logPath.toStdString().c_str(), true);
     qInstallMessageHandler(messageHandler);
 
 
@@ -146,50 +146,50 @@ int main(int argc, char *argv[])
 
 
     // registering types for QML
-    qmlRegisterType<clipboardAdapter>("moneroComponents.Clipboard", 1, 0, "Clipboard");
+    qmlRegisterType<clipboardAdapter>("lorentzComponents.Clipboard", 1, 0, "Clipboard");
 
-    qmlRegisterUncreatableType<Wallet>("moneroComponents.Wallet", 1, 0, "Wallet", "Wallet can't be instantiated directly");
+    qmlRegisterUncreatableType<Wallet>("lorentzComponents.Wallet", 1, 0, "Wallet", "Wallet can't be instantiated directly");
 
 
-    qmlRegisterUncreatableType<PendingTransaction>("moneroComponents.PendingTransaction", 1, 0, "PendingTransaction",
+    qmlRegisterUncreatableType<PendingTransaction>("lorentzComponents.PendingTransaction", 1, 0, "PendingTransaction",
                                                    "PendingTransaction can't be instantiated directly");
 
-    qmlRegisterUncreatableType<UnsignedTransaction>("moneroComponents.UnsignedTransaction", 1, 0, "UnsignedTransaction",
+    qmlRegisterUncreatableType<UnsignedTransaction>("lorentzComponents.UnsignedTransaction", 1, 0, "UnsignedTransaction",
                                                    "UnsignedTransaction can't be instantiated directly");
 
-    qmlRegisterUncreatableType<WalletManager>("moneroComponents.WalletManager", 1, 0, "WalletManager",
+    qmlRegisterUncreatableType<WalletManager>("lorentzComponents.WalletManager", 1, 0, "WalletManager",
                                                    "WalletManager can't be instantiated directly");
 
-    qmlRegisterUncreatableType<TranslationManager>("moneroComponents.TranslationManager", 1, 0, "TranslationManager",
+    qmlRegisterUncreatableType<TranslationManager>("lorentzComponents.TranslationManager", 1, 0, "TranslationManager",
                                                    "TranslationManager can't be instantiated directly");
 
 
 
-    qmlRegisterUncreatableType<TransactionHistoryModel>("moneroComponents.TransactionHistoryModel", 1, 0, "TransactionHistoryModel",
+    qmlRegisterUncreatableType<TransactionHistoryModel>("lorentzComponents.TransactionHistoryModel", 1, 0, "TransactionHistoryModel",
                                                         "TransactionHistoryModel can't be instantiated directly");
 
-    qmlRegisterUncreatableType<TransactionHistorySortFilterModel>("moneroComponents.TransactionHistorySortFilterModel", 1, 0, "TransactionHistorySortFilterModel",
+    qmlRegisterUncreatableType<TransactionHistorySortFilterModel>("lorentzComponents.TransactionHistorySortFilterModel", 1, 0, "TransactionHistorySortFilterModel",
                                                         "TransactionHistorySortFilterModel can't be instantiated directly");
 
-    qmlRegisterUncreatableType<TransactionHistory>("moneroComponents.TransactionHistory", 1, 0, "TransactionHistory",
+    qmlRegisterUncreatableType<TransactionHistory>("lorentzComponents.TransactionHistory", 1, 0, "TransactionHistory",
                                                         "TransactionHistory can't be instantiated directly");
 
-    qmlRegisterUncreatableType<TransactionInfo>("moneroComponents.TransactionInfo", 1, 0, "TransactionInfo",
+    qmlRegisterUncreatableType<TransactionInfo>("lorentzComponents.TransactionInfo", 1, 0, "TransactionInfo",
                                                         "TransactionHistory can't be instantiated directly");
 #ifndef Q_OS_IOS
-    qmlRegisterUncreatableType<DaemonManager>("moneroComponents.DaemonManager", 1, 0, "DaemonManager",
+    qmlRegisterUncreatableType<DaemonManager>("lorentzComponents.DaemonManager", 1, 0, "DaemonManager",
                                                    "DaemonManager can't be instantiated directly");
 #endif
-    qmlRegisterUncreatableType<AddressBookModel>("moneroComponents.AddressBookModel", 1, 0, "AddressBookModel",
+    qmlRegisterUncreatableType<AddressBookModel>("lorentzComponents.AddressBookModel", 1, 0, "AddressBookModel",
                                                         "AddressBookModel can't be instantiated directly");
 
-    qmlRegisterUncreatableType<AddressBook>("moneroComponents.AddressBook", 1, 0, "AddressBook",
+    qmlRegisterUncreatableType<AddressBook>("lorentzComponents.AddressBook", 1, 0, "AddressBook",
                                                         "AddressBook can't be instantiated directly");
 
-    qmlRegisterUncreatableType<SubaddressModel>("moneroComponents.SubaddressModel", 1, 0, "SubaddressModel",
+    qmlRegisterUncreatableType<SubaddressModel>("lorentzComponents.SubaddressModel", 1, 0, "SubaddressModel",
                                                         "SubaddressModel can't be instantiated directly");
 
-    qmlRegisterUncreatableType<Subaddress>("moneroComponents.Subaddress", 1, 0, "Subaddress",
+    qmlRegisterUncreatableType<Subaddress>("lorentzComponents.Subaddress", 1, 0, "Subaddress",
                                                         "Subaddress can't be instantiated directly");
 
     qRegisterMetaType<PendingTransaction::Priority>();
@@ -197,10 +197,10 @@ int main(int argc, char *argv[])
     qRegisterMetaType<TransactionHistoryModel::TransactionInfoRole>();
 
     qRegisterMetaType<NetworkType::Type>();
-    qmlRegisterType<NetworkType>("moneroComponents.NetworkType", 1, 0, "NetworkType");
+    qmlRegisterType<NetworkType>("lorentzComponents.NetworkType", 1, 0, "NetworkType");
 
 #ifdef WITH_SCANNER
-    qmlRegisterType<QrCodeScanner>("moneroComponents.QRCodeScanner", 1, 0, "QRCodeScanner");
+    qmlRegisterType<QrCodeScanner>("lorentzComponents.QRCodeScanner", 1, 0, "QRCodeScanner");
 #endif
 
     QQmlApplicationEngine engine;
@@ -229,15 +229,15 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("daemonManager", daemonManager);
 #endif
 
-//  export to QML monero accounts root directory
+//  export to QML lorentz accounts root directory
 //  wizard is talking about where
 //  to save the wallet file (.keys, .bin), they have to be user-accessible for
-//  backups - I reckon we save that in My Documents\Monero Accounts\ on
-//  Windows, ~/Monero Accounts/ on nix / osx
+//  backups - I reckon we save that in My Documents\Lorentz Accounts\ on
+//  Windows, ~/Lorentz Accounts/ on nix / osx
 #if defined(Q_OS_WIN) || defined(Q_OS_IOS)
-    QStringList moneroAccountsRootDir = QStandardPaths::standardLocations(QStandardPaths::DocumentsLocation);
+    QStringList lorentzAccountsRootDir = QStandardPaths::standardLocations(QStandardPaths::DocumentsLocation);
 #else
-    QStringList moneroAccountsRootDir = QStandardPaths::standardLocations(QStandardPaths::HomeLocation);
+    QStringList lorentzAccountsRootDir = QStandardPaths::standardLocations(QStandardPaths::HomeLocation);
 #endif
 
     engine.rootContext()->setContextProperty("isWindows", isWindows);
@@ -253,10 +253,10 @@ int main(int argc, char *argv[])
 #endif
 
 
-    if (!moneroAccountsRootDir.empty())
+    if (!lorentzAccountsRootDir.empty())
     {
-        QString moneroAccountsDir = moneroAccountsRootDir.at(0) + "/Monero/wallets";
-        engine.rootContext()->setContextProperty("moneroAccountsDir", moneroAccountsDir);
+        QString lorentzAccountsDir = lorentzAccountsRootDir.at(0) + "/Lorentz/wallets";
+        engine.rootContext()->setContextProperty("lorentzAccountsDir", lorentzAccountsDir);
     }
 
 
@@ -265,7 +265,7 @@ int main(int argc, char *argv[])
     if (accountName.isEmpty())
         accountName = qgetenv("USERNAME"); // Windows
     if (accountName.isEmpty())
-        accountName = "My monero Account";
+        accountName = "My lorentz Account";
 
     engine.rootContext()->setContextProperty("defaultAccountName", accountName);
     engine.rootContext()->setContextProperty("applicationDirectory", QApplication::applicationDirPath());

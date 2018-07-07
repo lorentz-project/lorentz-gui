@@ -1,11 +1,11 @@
 import QtQuick 2.0
 
-import "../components" as MoneroComponents
+import "../components" as LorentzComponents
 
 TextEdit {
-    color: MoneroComponents.Style.defaultFontColor
-    font.family: MoneroComponents.Style.fontRegular.name
-    selectionColor: MoneroComponents.Style.dimmedFontColor
+    color: LorentzComponents.Style.defaultFontColor
+    font.family: LorentzComponents.Style.fontRegular.name
+    selectionColor: LorentzComponents.Style.dimmedFontColor
     wrapMode: Text.Wrap
     readOnly: true
     selectByMouse: true

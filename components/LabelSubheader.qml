@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2015, The Monero Project
+// Copyright (c) 2014-2015, The Lorentz Project
 //
 // All rights reserved.
 //
@@ -28,7 +28,7 @@
 
 import QtQuick 2.0
 
-import "../components" as MoneroComponents
+import "../components" as LorentzComponents
 
 Label {
     id: item
@@ -40,8 +40,8 @@ Label {
         anchors.left: parent.left
         anchors.right: parent.right
         height: 2
-        color: MoneroComponents.Style.dividerColor
-        opacity: MoneroComponents.Style.dividerOpacity
+        color: LorentzComponents.Style.dividerColor
+        opacity: LorentzComponents.Style.dividerOpacity
     }
 
     MouseArea {

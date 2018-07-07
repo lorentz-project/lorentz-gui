@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 //
 // All rights reserved.
 //
@@ -33,7 +33,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls.Styles 1.4
 import QtQuick.Window 2.0
 
-import "../components" as MoneroComponents
+import "../components" as LorentzComponents
 
 Window {
     id: root
@@ -104,7 +104,7 @@ Window {
             spacing: 60
             Layout.alignment: Qt.AlignHCenter
 
-            MoneroComponents.StandardButton {
+            LorentzComponents.StandardButton {
                 id: okButton
                 visible:false
                 fontSize: 14
@@ -118,7 +118,7 @@ Window {
                 }
             }
 
-            MoneroComponents.StandardButton {
+            LorentzComponents.StandardButton {
                 id: cancelButton
                 fontSize: 14
                 text: qsTr("Use custom settings")

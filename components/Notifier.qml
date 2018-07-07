@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2018, The Monero Project
+// Copyright (c) 2017-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -28,7 +28,7 @@
 
 import QtQuick 2.0
 import QtQuick.Controls 1.4
-import moneroComponents.Wallet 1.0
+import lorentzComponents.Wallet 1.0
 
 Item {
     id: item

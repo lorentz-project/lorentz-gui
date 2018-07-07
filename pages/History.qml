@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -29,11 +29,11 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 import QtQuick.Dialogs 1.2
-import moneroComponents.Wallet 1.0
-import moneroComponents.WalletManager 1.0
-import moneroComponents.TransactionHistory 1.0
-import moneroComponents.TransactionInfo 1.0
-import moneroComponents.TransactionHistoryModel 1.0
+import lorentzComponents.Wallet 1.0
+import lorentzComponents.WalletManager 1.0
+import lorentzComponents.TransactionHistory 1.0
+import lorentzComponents.TransactionInfo 1.0
+import lorentzComponents.TransactionHistoryModel 1.0
 
 import "../components"
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -29,7 +29,7 @@
 import QtQuick 2.5
 import QtQuick.Layouts 1.1
 
-import "../components" as MoneroComponents
+import "../components" as LorentzComponents
 
 Item {
     id: item
@@ -39,7 +39,7 @@ Item {
     property string tipText: ""
     property int fontSize: 16 * scaleRatio
     property bool fontBold: false
-    property string fontColor: MoneroComponents.Style.defaultFontColor
+    property string fontColor: LorentzComponents.Style.defaultFontColor
     property string fontFamily: ""
     property alias wrapMode: label.wrapMode
     property alias horizontalAlignment: label.horizontalAlignment
@@ -58,7 +58,7 @@ Item {
             if(fontFamily){
                 return fontFamily;
             } else {
-                return MoneroComponents.Style.fontRegular.name;
+                return LorentzComponents.Style.fontRegular.name;
             }
         }
         font.pixelSize: fontSize

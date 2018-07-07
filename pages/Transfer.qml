@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -29,9 +29,9 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 import QtQuick.Dialogs 1.2
-import moneroComponents.Clipboard 1.0
-import moneroComponents.PendingTransaction 1.0
-import moneroComponents.Wallet 1.0
+import lorentzComponents.Clipboard 1.0
+import lorentzComponents.PendingTransaction 1.0
+import lorentzComponents.Wallet 1.0
 import "../components"
 import "." 1.0
 
@@ -542,7 +542,7 @@ Rectangle {
     FileDialog {
         id: signTxDialog
         title: qsTr("Please choose a file") + translationManager.emptyString
-        folder: "file://" +moneroAccountsDir
+        folder: "file://" +lorentzAccountsDir
         nameFilters: [ "Unsigned transfers (*)"]
 
         onAccepted: {
@@ -603,7 +603,7 @@ Rectangle {
     FileDialog {
         id: submitTxDialog
         title: qsTr("Please choose a file") + translationManager.emptyString
-        folder: "file://" +moneroAccountsDir
+        folder: "file://" +lorentzAccountsDir
         nameFilters: [ "signed transfers (*)"]
 
         onAccepted: {
@@ -615,7 +615,7 @@ Rectangle {
                 informationPopup.open();
             } else {
                 informationPopup.title = qsTr("Information") + translationManager.emptyString
-                informationPopup.text  = qsTr("Monero sent successfully") + translationManager.emptyString
+                informationPopup.text  = qsTr("Lorentz sent successfully") + translationManager.emptyString
                 informationPopup.icon  = StandardIcon.Information
                 informationPopup.onCloseCallback = null
                 informationPopup.open();

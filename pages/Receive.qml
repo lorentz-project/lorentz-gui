@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 //
 // All rights reserved.
 //
@@ -33,13 +33,13 @@ import QtQuick.Layouts 1.1
 import QtQuick.Dialogs 1.2
 
 import "../components"
-import moneroComponents.Clipboard 1.0
-import moneroComponents.Wallet 1.0
-import moneroComponents.WalletManager 1.0
-import moneroComponents.TransactionHistory 1.0
-import moneroComponents.TransactionHistoryModel 1.0
-import moneroComponents.Subaddress 1.0
-import moneroComponents.SubaddressModel 1.0
+import lorentzComponents.Clipboard 1.0
+import lorentzComponents.Wallet 1.0
+import lorentzComponents.WalletManager 1.0
+import lorentzComponents.TransactionHistory 1.0
+import lorentzComponents.TransactionHistoryModel 1.0
+import lorentzComponents.Subaddress 1.0
+import lorentzComponents.SubaddressModel 1.0
 import "../js/TxUtils.js" as TxUtils
 
 Rectangle {
@@ -53,7 +53,7 @@ Rectangle {
     property alias addressText : pageReceive.current_address
 
     function makeQRCodeString() {
-        var s = "monero:"
+        var s = "lorentz:"
         var nfields = 0
         s += current_address;
         var amount = amountToReceiveLine.text.trim()
@@ -135,8 +135,8 @@ Rectangle {
         var expectedAmount = walletManager.amountFromString(amountToReceiveLine.text)
         if (expectedAmount && expectedAmount != amount) {
             var displayTotalAmount = walletManager.displayAmount(totalAmount)
-            if (amount > expectedAmount) toReceiveSatisfiedLine.text += qsTr("With more Monero");
-            else if (amount < expectedAmount) toReceiveSatisfiedLine.text = qsTr("With not enough Monero")
+            if (amount > expectedAmount) toReceiveSatisfiedLine.text += qsTr("With more Lorentz");
+            else if (amount < expectedAmount) toReceiveSatisfiedLine.text = qsTr("With not enough Lorentz")
             toReceiveSatisfiedLine.text += ": " + "<br>" +
                     qsTr("Expected") + ": " + amountToReceiveLine.text + "<br>" +
                     qsTr("Total received") + ": " + displayTotalAmount + translationManager.emptyString;

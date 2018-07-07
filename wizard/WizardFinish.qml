@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -28,7 +28,7 @@
 
 import QtQuick 2.2
 import QtQuick.Layouts 1.1
-import moneroComponents.NetworkType 1.0
+import lorentzComponents.NetworkType 1.0
 
 
 ColumnLayout {

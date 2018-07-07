@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -37,7 +37,7 @@ import "../js/Utils.js" as Utils
 
 
 import "../components"
-import moneroComponents.Clipboard 1.0
+import lorentzComponents.Clipboard 1.0
 
 Rectangle {
     property bool viewOnly: false
@@ -640,15 +640,15 @@ Rectangle {
             }
 
             TextBlock {
-                id: guiMoneroVersion
+                id: guiLorentzVersion
                 font.pixelSize: 14
-                text: qsTr("Embedded Monero version: ") + translationManager.emptyString
+                text: qsTr("Embedded Lorentz version: ") + translationManager.emptyString
             }
 
             TextBlock {
                 font.pixelSize: 14
                 font.bold: true
-                text: Version.GUI_MONERO_VERSION + translationManager.emptyString
+                text: Version.GUI_LORENTZ_VERSION + translationManager.emptyString
             }
 
             TextBlock {

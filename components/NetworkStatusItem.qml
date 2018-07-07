@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -29,8 +29,8 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 
-import moneroComponents.Wallet 1.0
-import "../components" as MoneroComponents
+import lorentzComponents.Wallet 1.0
+import "../components" as LorentzComponents
 
 Rectangle {
     id: item
@@ -94,7 +94,7 @@ Rectangle {
                 anchors.left: parent.left
                 anchors.top: parent.top
                 anchors.topMargin: 0
-                font.family: MoneroComponents.Style.fontMedium.name
+                font.family: LorentzComponents.Style.fontMedium.name
                 font.bold: true
                 font.pixelSize: 13 * scaleRatio
                 color: "white"
@@ -107,7 +107,7 @@ Rectangle {
                 anchors.left: parent.left
                 anchors.top: parent.top
                 anchors.topMargin: 14
-                font.family: MoneroComponents.Style.fontMedium.name
+                font.family: LorentzComponents.Style.fontMedium.name
                 font.pixelSize: 20 * scaleRatio
                 color: "white"
                 text: getConnectionStatusString(item.connected) + translationManager.emptyString

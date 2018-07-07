@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -28,7 +28,7 @@
 
 import QtQuick 2.0
 
-import "../components" as MoneroComponents
+import "../components" as LorentzComponents
 
 Item {
     id: item
@@ -215,7 +215,7 @@ Item {
             }
         }
 
-        MoneroComponents.StandardButton {
+        LorentzComponents.StandardButton {
             id: button
             anchors.top: parent.top
             anchors.bottom: parent.bottom

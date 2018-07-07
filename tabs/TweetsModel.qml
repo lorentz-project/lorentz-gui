@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -89,7 +89,7 @@ Item {
             console.log("setting demo token")
             bearerToken = encodeURIComponent(Helper.demoToken())
             tweetsModel.phrase = ""
-            tweetsModel.from = "@monerocurrency"
+            tweetsModel.from = "@lorentzcurrency"
             // reload()
             return;
         }

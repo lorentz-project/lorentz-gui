@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -30,7 +30,7 @@ import QtQuick 2.2
 import QtQuick.Controls 1.2
 import QtQuick.Controls.Styles 1.2
 
-import "../components" as MoneroComponents
+import "../components" as LorentzComponents
 
 Item {
     id: datePicker
@@ -72,11 +72,11 @@ Item {
             anchors.top: parent.top
             anchors.topMargin: 2
             anchors.left: parent.left
-            font.family: MoneroComponents.Style.fontLight.name
+            font.family: LorentzComponents.Style.fontLight.name
             font.pixelSize: 14
             font.bold: false
             textFormat: Text.RichText
-            color: MoneroComponents.Style.defaultFontColor
+            color: LorentzComponents.Style.defaultFontColor
 
             MouseArea {
                 anchors.fill: parent
@@ -165,9 +165,9 @@ Item {
                 id: dayInput
                 readOnly: true
                 width: 22
-                font.family: MoneroComponents.Style.fontRegular.name
+                font.family: LorentzComponents.Style.fontRegular.name
                 font.pixelSize: 14
-                color: datePicker.error ? errorColor : MoneroComponents.Style.defaultFontColor
+                color: datePicker.error ? errorColor : LorentzComponents.Style.defaultFontColor
                 maximumLength: 2
                 horizontalAlignment: TextInput.AlignHCenter
                 validator: IntValidator{bottom: 01; top: 31;}
@@ -188,9 +188,9 @@ Item {
             }
 
             Text {
-                font.family: MoneroComponents.Style.fontRegular.name
+                font.family: LorentzComponents.Style.fontRegular.name
                 font.pixelSize: 14
-                color: datePicker.error ? errorColor : MoneroComponents.Style.defaultFontColor
+                color: datePicker.error ? errorColor : LorentzComponents.Style.defaultFontColor
                 text: "-"
             }
 
@@ -198,9 +198,9 @@ Item {
                 id: monthInput
                 readOnly: true
                 width: 22
-                font.family: MoneroComponents.Style.fontRegular.name
+                font.family: LorentzComponents.Style.fontRegular.name
                 font.pixelSize: 14
-                color: datePicker.error ? errorColor : MoneroComponents.Style.defaultFontColor
+                color: datePicker.error ? errorColor : LorentzComponents.Style.defaultFontColor
                 maximumLength: 2
                 horizontalAlignment: TextInput.AlignHCenter
                 validator: IntValidator{bottom: 01; top: 12;}
@@ -220,18 +220,18 @@ Item {
             }
 
             Text {
-                font.family: MoneroComponents.Style.fontRegular.name
+                font.family: LorentzComponents.Style.fontRegular.name
                 font.pixelSize: 14
-                color: datePicker.error ? errorColor : MoneroComponents.Style.defaultFontColor
+                color: datePicker.error ? errorColor : LorentzComponents.Style.defaultFontColor
                 text: "-"
             }
 
             TextInput {
                 id: yearInput
                 width: 44
-                font.family: MoneroComponents.Style.fontRegular.name
+                font.family: LorentzComponents.Style.fontRegular.name
                 font.pixelSize: 14
-                color: datePicker.error ? errorColor : MoneroComponents.Style.defaultFontColor
+                color: datePicker.error ? errorColor : LorentzComponents.Style.defaultFontColor
                 maximumLength: 4
                 horizontalAlignment: TextInput.AlignHCenter
                 validator: IntValidator{bottom: 1000; top: 9999;}

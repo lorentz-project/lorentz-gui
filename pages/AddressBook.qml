@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -29,8 +29,8 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 import "../components"
-import moneroComponents.AddressBook 1.0
-import moneroComponents.AddressBookModel 1.0
+import lorentzComponents.AddressBook 1.0
+import lorentzComponents.AddressBookModel 1.0
 
 Rectangle {
     id: root

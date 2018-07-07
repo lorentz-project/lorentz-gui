@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -29,7 +29,7 @@
 import QtQuick 2.2
 import QtQml 2.2
 import QtQuick.Layouts 1.1
-import moneroComponents.NetworkType 1.0
+import lorentzComponents.NetworkType 1.0
 import "../components"
 
 ColumnLayout {
@@ -72,7 +72,7 @@ ColumnLayout {
             color: "#3F3F3F"
             wrapMode: Text.Wrap
             horizontalAlignment: Text.AlignHCenter
-            text: qsTr("Welcome to Monero!") + translationManager.emptyString
+            text: qsTr("Welcome to Lorentz!") + translationManager.emptyString
         }
 
         Text {

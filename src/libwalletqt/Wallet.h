@@ -7,12 +7,12 @@
 #include <QList>
 #include <QtConcurrent/QtConcurrent>
 
-#include "wallet/api/wallet2_api.h" // we need to have an access to the Monero::Wallet::Status enum here;
+#include "wallet/api/wallet2_api.h" // we need to have an access to the Lorentz::Wallet::Status enum here;
 #include "PendingTransaction.h" // we need to have an access to the PendingTransaction::Priority enum here;
 #include "UnsignedTransaction.h"
 #include "NetworkType.h"
 
-namespace Monero {
+namespace Lorentz {
     class Wallet; // forward declaration
 }
 
@@ -56,17 +56,17 @@ public:
 
 
     enum Status {
-        Status_Ok       = Monero::Wallet::Status_Ok,
-        Status_Error    = Monero::Wallet::Status_Error,
-        Status_Critical = Monero::Wallet::Status_Critical
+        Status_Ok       = Lorentz::Wallet::Status_Ok,
+        Status_Error    = Lorentz::Wallet::Status_Error,
+        Status_Critical = Lorentz::Wallet::Status_Critical
     };
 
     Q_ENUM(Status)
 
     enum ConnectionStatus {
-        ConnectionStatus_Connected       = Monero::Wallet::ConnectionStatus_Connected,
-        ConnectionStatus_Disconnected    = Monero::Wallet::ConnectionStatus_Disconnected,
-        ConnectionStatus_WrongVersion    = Monero::Wallet::ConnectionStatus_WrongVersion
+        ConnectionStatus_Connected       = Lorentz::Wallet::ConnectionStatus_Connected,
+        ConnectionStatus_Disconnected    = Lorentz::Wallet::ConnectionStatus_Disconnected,
+        ConnectionStatus_WrongVersion    = Lorentz::Wallet::ConnectionStatus_WrongVersion
     };
 
     Q_ENUM(ConnectionStatus)
@@ -316,13 +316,13 @@ signals:
 
 private:
     Wallet(QObject * parent = nullptr);
-    Wallet(Monero::Wallet *w, QObject * parent = 0);
+    Wallet(Lorentz::Wallet *w, QObject * parent = 0);
     ~Wallet();
 private:
     friend class WalletManager;
     friend class WalletListenerImpl;
     //! libwallet's
-    Monero::Wallet * m_walletImpl;
+    Lorentz::Wallet * m_walletImpl;
     // history lifetime managed by wallet;
     TransactionHistory * m_history;
     // Used for UI history view
@@ -348,7 +348,7 @@ private:
     bool m_connectionStatusRunning;
     QString m_daemonUsername;
     QString m_daemonPassword;
-    Monero::WalletListener *m_walletListener;
+    Lorentz::WalletListener *m_walletListener;
 };
 
 

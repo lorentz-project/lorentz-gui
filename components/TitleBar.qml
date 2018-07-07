@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -53,7 +53,7 @@ Rectangle {
     property bool showMinimizeButton: false
     property bool showMaximizeButton: false
     property bool showCloseButton: true
-    property bool showMoneroLogo: false
+    property bool showLorentzLogo: false
     property bool small: false
 
     signal closeClicked
@@ -80,7 +80,7 @@ Rectangle {
         width: 125
         height: parent.height
         anchors.centerIn: parent
-        visible: customDecorations && showMoneroLogo
+        visible: customDecorations && showLorentzLogo
         z: parent.z + 1
 
         Image {
@@ -95,7 +95,7 @@ Rectangle {
 
     Label {
         id: titleLabel
-        visible: !showMoneroLogo && customDecorations && titleBar.title !== ''
+        visible: !showLorentzLogo && customDecorations && titleBar.title !== ''
         anchors.centerIn: parent
         fontSize: 18
         text: titleBar.title

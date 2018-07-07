@@ -7,7 +7,7 @@
 #include "wallet/api/wallet2_api.h"
 
 // default log path by OS (should be writable)
-static const QString default_name = "monero-wallet-gui.log";
+static const QString default_name = "lorentz-wallet-gui.log";
 #if defined(Q_OS_ANDROID) || defined(Q_OS_IOS)
     static const QString osPath = QStandardPaths::standardLocations(QStandardPaths::AppDataLocation).at(0);
 #elif defined(Q_OS_WIN)
@@ -39,11 +39,11 @@ void messageHandler(QtMsgType type, const QMessageLogContext &context, const QSt
     const std::string msg = message.toStdString();
     switch(type)
     {
-        case QtDebugMsg: Monero::Wallet::debug(cat, msg); break;
-        case QtInfoMsg: Monero::Wallet::info(cat, msg); break;
-        case QtWarningMsg: Monero::Wallet::warning(cat, msg); break;
-        case QtCriticalMsg: Monero::Wallet::error(cat, msg); break;
-        case QtFatalMsg: Monero::Wallet::error(cat, msg); break;
+        case QtDebugMsg: Lorentz::Wallet::debug(cat, msg); break;
+        case QtInfoMsg: Lorentz::Wallet::info(cat, msg); break;
+        case QtWarningMsg: Lorentz::Wallet::warning(cat, msg); break;
+        case QtCriticalMsg: Lorentz::Wallet::error(cat, msg); break;
+        case QtFatalMsg: Lorentz::Wallet::error(cat, msg); break;
     }
 }
 

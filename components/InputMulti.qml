@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2015, The Monero Project
+// Copyright (c) 2014-2015, The Lorentz Project
 //
 // All rights reserved.
 //
@@ -30,7 +30,7 @@ import QtQuick.Controls 2.0
 import QtQuick 2.7
 
 import "../js/TxUtils.js" as TxUtils
-import "../components" as MoneroComponents
+import "../components" as LorentzComponents
 
 
 TextArea {
@@ -41,14 +41,14 @@ TextArea {
     property bool fontBold: false
 
     id: textArea
-    font.family: MoneroComponents.Style.fontRegular.name
+    font.family: LorentzComponents.Style.fontRegular.name
     font.pixelSize: fontSize
     font.bold: fontBold
     horizontalAlignment: TextInput.AlignLeft
     selectByMouse: true
-    color: MoneroComponents.Style.defaultFontColor
-    selectionColor: MoneroComponents.Style.dimmedFontColor
-    selectedTextColor: MoneroComponents.Style.defaultFontColor
+    color: LorentzComponents.Style.defaultFontColor
+    selectionColor: LorentzComponents.Style.dimmedFontColor
+    selectedTextColor: LorentzComponents.Style.defaultFontColor
 
     wrapMode: {
         if(wrapAnywhere){

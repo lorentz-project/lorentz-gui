@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 //
 // All rights reserved.
 //
@@ -32,7 +32,7 @@ import QtQuick.Controls.Styles 1.4
 import QtQuick.Layouts 1.1
 
 import "../components"
-import moneroComponents.Clipboard 1.0
+import lorentzComponents.Clipboard 1.0
 
 import "../js/TxUtils.js" as TxUtils
 

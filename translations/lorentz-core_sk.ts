@@ -554,8 +554,8 @@
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="74"/>
-        <source>Mining with your computer helps strengthen the Monero network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Monero. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>Ťažba s Vašim počítačom pomáha posilniť sieť Monero. Čím viac ľudí ťaží, tým je náročnejšie zaútočiť na sieť, a každý malý kúsok pomáha.&lt;br&gt; &lt;br&gt;Ťažba Vám taktiež dáva malú šancu zarobiť nejaké Monero. Váš počítač bude vytvárať haše hľadaním riešenia v bloku. Ak nájdete blok, dostanete s tým súvisiacu odmenu. Veľa šťastia!</translation>
+        <source>Mining with your computer helps strengthen the Lorentz network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Lorentz. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+        <translation>Ťažba s Vašim počítačom pomáha posilniť sieť Lorentz. Čím viac ľudí ťaží, tým je náročnejšie zaútočiť na sieť, a každý malý kúsok pomáha.&lt;br&gt; &lt;br&gt;Ťažba Vám taktiež dáva malú šancu zarobiť nejaké Lorentz. Váš počítač bude vytvárať haše hľadaním riešenia v bloku. Ak nájdete blok, dostanete s tým súvisiacu odmenu. Veľa šťastia!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="87"/>
@@ -783,13 +783,13 @@
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="138"/>
-        <source>With more Monero</source>
-        <translation>S viac Monero</translation>
+        <source>With more Lorentz</source>
+        <translation>S viac Lorentz</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="139"/>
-        <source>With not enough Monero</source>
-        <translation>S nedstatkom Monero</translation>
+        <source>With not enough Lorentz</source>
+        <translation>S nedstatkom Lorentz</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="141"/>
@@ -1111,8 +1111,8 @@
     </message>
     <message>
         <location filename="../pages/Settings.qml" line="645"/>
-        <source>Embedded Monero version: </source>
-        <translation>Verzia integrovaného Monero: </translation>
+        <source>Embedded Lorentz version: </source>
+        <translation>Verzia integrovaného Lorentz: </translation>
     </message>
     <message>
         <location filename="../pages/Settings.qml" line="657"/>
@@ -1225,8 +1225,8 @@ Stará vyrovnávacia pamäť peňaženky bude premenovaná a bude môcť byť ob
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="97"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by Monero wallets as well as wallets from Monero clones which reuse the Monero keys.</source>
-        <translation>Táto stránka Vám umožní komunikovať so zdieľanou databázou okruhov. Táto databáza je určená na použitie s Monero peňazenkami a taktiež s peňaženkami Monero klonov, ktoré opätovne používajú Monero kľúče.</translation>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by Lorentz wallets as well as wallets from Lorentz clones which reuse the Lorentz keys.</source>
+        <translation>Táto stránka Vám umožní komunikovať so zdieľanou databázou okruhov. Táto databáza je určená na použitie s Lorentz peňazenkami a taktiež s peňaženkami Lorentz klonov, ktoré opätovne používajú Lorentz kľúče.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="110"/>
@@ -1242,8 +1242,8 @@ Stará vyrovnávacia pamäť peňaženky bude premenovaná a bude môcť byť ob
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="113"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the monero-blockchain-blackball tool to create a list of known spent outputs.&lt;br&gt;</source>
-        <translation>Aby bolo možné skryť, ktoré vstupy v Monero transakcii sa vynakladajú, tretia strana by nemala vedieť, ktoré vstupy v okruhu sú už známe. Možnosť tak urobiť by oslabila ochranu poskytovanú okruhovými podpismi. Ak je už známe, že všetky vstupy sú už vynaložené, tak aktuálne vynakladaný vstup sa jasne identifikuje, čím sa zruší účinok okuhových podpisov, čo je jedna z troch hlavných vrstiev ochrany súkromia, ktoré Monero používa.&lt;br&gt;Pomôcť transakciám vyhnúť sa týmto vstupom môžete použiť zoznam známych vstupov, aby ste sa vyhli ich použitiu v nových transakciách. Takýto zoznam si udržiava projekt Monero a je k dispozícii na webovej stránke getmonero.org a tu môžete tento zoznam importovať.&lt;br&gt;Alternatívne môžete prehliadať blockchain (a blockchain Monero klonov, ktoré tiež používajú Monero kľúče) sami pomocou nástroja monero-blockchain-blackball a vytvoriť zoznam známych vynaložených výstupov. &lt;br&gt;</translation>
+        <source>In order to obscure which inputs in a Lorentz transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Lorentz uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Lorentz project and is available on the getlorentz.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Lorentz clones) yourself using the lorentz-blockchain-blackball tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <translation>Aby bolo možné skryť, ktoré vstupy v Lorentz transakcii sa vynakladajú, tretia strana by nemala vedieť, ktoré vstupy v okruhu sú už známe. Možnosť tak urobiť by oslabila ochranu poskytovanú okruhovými podpismi. Ak je už známe, že všetky vstupy sú už vynaložené, tak aktuálne vynakladaný vstup sa jasne identifikuje, čím sa zruší účinok okuhových podpisov, čo je jedna z troch hlavných vrstiev ochrany súkromia, ktoré Lorentz používa.&lt;br&gt;Pomôcť transakciám vyhnúť sa týmto vstupom môžete použiť zoznam známych vstupov, aby ste sa vyhli ich použitiu v nových transakciách. Takýto zoznam si udržiava projekt Lorentz a je k dispozícii na webovej stránke getlorentz.org a tu môžete tento zoznam importovať.&lt;br&gt;Alternatívne môžete prehliadať blockchain (a blockchain Lorentz klonov, ktoré tiež používajú Lorentz kľúče) sami pomocou nástroja lorentz-blockchain-blackball a vytvoriť zoznam známych vynaložených výstupov. &lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="134"/>
@@ -1308,13 +1308,13 @@ Stará vyrovnávacia pamäť peňaženky bude premenovaná a bude môcť byť ob
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="245"/>
-        <source>In order to avoid nullifying the protection afforded by Monero&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Monero clone allows you do spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Monero and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Monero clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Monero safely.&lt;br&gt;If you do not use a key-reusing Monero clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>Aby sa zabránilo zrušeniu ochrany, ktorú poskytujú Monero okruhové podpisy, výstup by nemal byť vynaložený s rôznymi okruhmi na rôznych blockchain-och. Zatiaľ čo to zvyčajne nie je problém, môže sa ním stať, keď Monero klon používajúci Monero kľúče umožní vynaložiť existujúce výstupy. V tomto prípade musíte zabezpečiť, aby existujúce výstupy používali rovnaký okruh na oboch blockchain-ohc.&lt;br&gt;Toto sa bude robiť automaticky Monero softvérom a akýmkoľvek softvérom používajúcim Monero kľúče, ktorý sa nepokúša aktívne redukovať Vaše súkromie.&lt;br&gt;Ak používate aj Monero klon, používajúci Monero kľúče, a tento klon túto ochranu neobsahuje, stále môžete zabezpečiť bezpečnosť Vašich transakcií vynaložením najskôr na klone, a následne ručne pridali okruh na tejto stránke, čo Vám potom umožní vynaložiť Vaše Monero bezpečne.&lt;br&gt;Ak nepoužívate Monero klon bez týchto bezpečnostných funkcií, nemusíte nič robiť, pretože je všetko automatizované.&lt;br&gt;</translation>
+        <source>In order to avoid nullifying the protection afforded by Lorentz&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Lorentz clone allows you do spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Lorentz and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Lorentz clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Lorentz safely.&lt;br&gt;If you do not use a key-reusing Lorentz clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <translation>Aby sa zabránilo zrušeniu ochrany, ktorú poskytujú Lorentz okruhové podpisy, výstup by nemal byť vynaložený s rôznymi okruhmi na rôznych blockchain-och. Zatiaľ čo to zvyčajne nie je problém, môže sa ním stať, keď Lorentz klon používajúci Lorentz kľúče umožní vynaložiť existujúce výstupy. V tomto prípade musíte zabezpečiť, aby existujúce výstupy používali rovnaký okruh na oboch blockchain-ohc.&lt;br&gt;Toto sa bude robiť automaticky Lorentz softvérom a akýmkoľvek softvérom používajúcim Lorentz kľúče, ktorý sa nepokúša aktívne redukovať Vaše súkromie.&lt;br&gt;Ak používate aj Lorentz klon, používajúci Lorentz kľúče, a tento klon túto ochranu neobsahuje, stále môžete zabezpečiť bezpečnosť Vašich transakcií vynaložením najskôr na klone, a následne ručne pridali okruh na tejto stránke, čo Vám potom umožní vynaložiť Vaše Lorentz bezpečne.&lt;br&gt;Ak nepoužívate Lorentz klon bez týchto bezpečnostných funkcií, nemusíte nič robiť, pretože je všetko automatizované.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="267"/>
-        <source>This records rings used by outputs spent on Monero on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>Tieto okruhy záznamov použité vynaloženými výstupmi na Monero klone, používajúcom Monero kľúče, aby sa rovnaké okruhy mohli znova použiť kvôli zamedzeniu problémov s ochranou súkromia.</translation>
+        <source>This records rings used by outputs spent on Lorentz on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <translation>Tieto okruhy záznamov použité vynaloženými výstupmi na Lorentz klone, používajúcom Lorentz kľúče, aby sa rovnaké okruhy mohli znova použiť kvôli zamedzeniu problémov s ochranou súkromia.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="278"/>
@@ -1740,8 +1740,8 @@ Stará vyrovnávacia pamäť peňaženky bude premenovaná a bude môcť byť ob
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="622"/>
-        <source>Monero sent successfully</source>
-        <translation>Monero úspešne odoslané</translation>
+        <source>Lorentz sent successfully</source>
+        <translation>Lorentz úspešne odoslané</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="492"/>
@@ -1997,13 +1997,13 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardConfigure</name>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="79"/>
-        <source>We’re almost there - let’s just configure some Monero preferences</source>
-        <translation>Už sme skoro tam - ešte nakonfigurujte niektoré predvoľby pre Monero</translation>
+        <source>We’re almost there - let’s just configure some Lorentz preferences</source>
+        <translation>Už sme skoro tam - ešte nakonfigurujte niektoré predvoľby pre Lorentz</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="97"/>
-        <source>Kickstart the Monero blockchain?</source>
-        <translation>Nakopnúť Monero blockchain?</translation>
+        <source>Kickstart the Lorentz blockchain?</source>
+        <translation>Nakopnúť Lorentz blockchain?</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="113"/>
@@ -2017,8 +2017,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="140"/>
-        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Monero instance. However, storing the full blockchain is beneficial to the security of the Monero network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
-        <translation>Režim konzervácie disku používa podstatne menej diskového priestoru, ale rovnakú rýchlosť pripojenia do internetu ako bežná inštancia Monero. Avšak uloženie celého blockchain-u je prínosom pre bezpečnosť siete Monero. Ak používate zariadenie s obmedzeným priestorom na disku, táto možnosť je vhodná pre Vás.</translation>
+        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Lorentz instance. However, storing the full blockchain is beneficial to the security of the Lorentz network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
+        <translation>Režim konzervácie disku používa podstatne menej diskového priestoru, ale rovnakú rýchlosť pripojenia do internetu ako bežná inštancia Lorentz. Avšak uloženie celého blockchain-u je prínosom pre bezpečnosť siete Lorentz. Ak používate zariadenie s obmedzeným priestorom na disku, táto možnosť je vhodná pre Vás.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="153"/>
@@ -2027,8 +2027,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="169"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Ťažba zabezpečuje sieť Monero, a taktiež vypláca malú odmenu za vykonanú prácu. Toto Vám umožní ťažiť Monero keď je Váš počítač napájaný zo siete a je nečinný. Keď budete pokračovať v práci, ťažba sa zastaví.</translation>
+        <source>Mining secures the Lorentz network, and also pays a small reward for the work done. This option will let Lorentz mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>Ťažba zabezpečuje sieť Lorentz, a taktiež vypláca malú odmenu za vykonanú prácu. Toto Vám umožní ťažiť Lorentz keď je Váš počítač napájaný zo siete a je nečinný. Keď budete pokračovať v práci, ťažba sa zastaví.</translation>
     </message>
 </context>
 <context>
@@ -2051,7 +2051,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardDaemonSettings</name>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="114"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
+        <source>To be able to communicate with the Lorentz network your wallet needs to be connected to a Lorentz node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2084,8 +2084,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardDonation</name>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="93"/>
-        <source>Monero development is solely supported by donations</source>
-        <translation>Vývoj softvéru Monero je podporovaný výhradne darmi</translation>
+        <source>Lorentz development is solely supported by donations</source>
+        <translation>Vývoj softvéru Lorentz je podporovaný výhradne darmi</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="113"/>
@@ -2099,8 +2099,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 XMR and add a 0.0025 XMR to support Monero development.</source>
-        <translation>Pre každú transakciu sa účtuje malý poplatok za transakciu. Táto možnosť Vám umožní pridať ďalšiu sumu, ktorá predstavuje percento z tohto poplatku, k Vašej transakcii na podporu vývoja softvéru Monero. Napríklad 50% auto-donácia vezme transakčný poplatok 0,005 XMR a pridá 0,0025 XMR na podporu vývoja softvéru Monero.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Lorentz development. For instance, a 50% autodonation take a transaction fee of 0.005 XMR and add a 0.0025 XMR to support Lorentz development.</source>
+        <translation>Pre každú transakciu sa účtuje malý poplatok za transakciu. Táto možnosť Vám umožní pridať ďalšiu sumu, ktorá predstavuje percento z tohto poplatku, k Vašej transakcii na podporu vývoja softvéru Lorentz. Napríklad 50% auto-donácia vezme transakčný poplatok 0,005 XMR a pridá 0,0025 XMR na podporu vývoja softvéru Lorentz.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2109,8 +2109,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="190"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Ťažba zabezpečuje sieť Monero, a taktiež vypláca malú odmenu za vykonanú prácu. Toto Vám umožní ťažiť Monero keď je Váš počítač napájaný zo siete a je nečinný. Keď budete pokračovať v práci, ťažba sa zastaví.</translation>
+        <source>Mining secures the Lorentz network, and also pays a small reward for the work done. This option will let Lorentz mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>Ťažba zabezpečuje sieť Lorentz, a taktiež vypláca malú odmenu za vykonanú prácu. Toto Vám umožní ťažiť Lorentz keď je Váš počítač napájaný zo siete a je nečinný. Keď budete pokračovať v práci, ťažba sa zastaví.</translation>
     </message>
 </context>
 <context>
@@ -2202,8 +2202,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardMain.qml" line="367"/>
-        <source>USE MONERO</source>
-        <translation>POUŽIŤ MONERO</translation>
+        <source>USE LORENTZ</source>
+        <translation>POUŽIŤ LORENTZ</translation>
     </message>
     <message>
         <location filename="../wizard/WizardMain.qml" line="380"/>
@@ -2308,8 +2308,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardOptions</name>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="75"/>
-        <source>Welcome to Monero!</source>
-        <translation>Vitajte v Monero!</translation>
+        <source>Welcome to Lorentz!</source>
+        <translation>Vitajte v Lorentz!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="86"/>
@@ -2383,8 +2383,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardWelcome</name>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="73"/>
-        <source>Welcome to Monero!</source>
-        <translation>Vitajte v Monero!</translation>
+        <source>Welcome to Lorentz!</source>
+        <translation>Vitajte v Lorentz!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="83"/>
@@ -2567,7 +2567,7 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="788"/>
-        <source>Monero sent successfully: %1 transaction(s) </source>
+        <source>Lorentz sent successfully: %1 transaction(s) </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2595,8 +2595,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="862"/>
-        <source>This address received %1 monero, with %2 confirmation(s).</source>
-        <translation>Táto adresa prijala %1 monero, s %2 potvrdeniami.</translation>
+        <source>This address received %1 lorentz, with %2 confirmation(s).</source>
+        <translation>Táto adresa prijala %1 lorentz, s %2 potvrdeniami.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="873"/>
@@ -2671,8 +2671,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1783"/>
-        <source>New version of monero-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>K dispozícii je nová verzia monero-wallet-gui: %1&lt;br&gt;%2</translation>
+        <source>New version of lorentz-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>K dispozícii je nová verzia lorentz-wallet-gui: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1815"/>
@@ -2713,8 +2713,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="859"/>
-        <source>This address received %1 monero, but the transaction is not yet mined</source>
-        <translation>Táto adresa prijala %1 monero, ale transakcia ešte nebola vyťažená</translation>
+        <source>This address received %1 lorentz, but the transaction is not yet mined</source>
+        <translation>Táto adresa prijala %1 lorentz, ale transakcia ešte nebola vyťažená</translation>
     </message>
     <message>
         <location filename="../main.qml" line="866"/>
@@ -2743,8 +2743,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1285"/>
-        <source>Monero</source>
-        <translation>Monero</translation>
+        <source>Lorentz</source>
+        <translation>Lorentz</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1441"/>

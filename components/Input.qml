@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -29,17 +29,17 @@
 import QtQuick.Controls 2.0
 import QtQuick 2.7
 
-import "../components" as MoneroComponents
+import "../components" as LorentzComponents
 
 TextField {
-    font.family: MoneroComponents.Style.fontRegular.name
+    font.family: LorentzComponents.Style.fontRegular.name
     font.pixelSize: 18 * scaleRatio
     font.bold: true
     horizontalAlignment: TextInput.AlignLeft
     selectByMouse: true
-    color: MoneroComponents.Style.defaultFontColor
-    selectionColor: MoneroComponents.Style.dimmedFontColor
-    selectedTextColor: MoneroComponents.Style.defaultFontColor
+    color: LorentzComponents.Style.defaultFontColor
+    selectionColor: LorentzComponents.Style.dimmedFontColor
+    selectedTextColor: LorentzComponents.Style.defaultFontColor
 
     background: Rectangle {
         color: "transparent"

@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -29,8 +29,8 @@
 import QtQuick 2.2
 import QtQuick.Layouts 1.1
 import QtGraphicalEffects 1.0
-import moneroComponents.Wallet 1.0
-import moneroComponents.NetworkType 1.0
+import lorentzComponents.Wallet 1.0
+import lorentzComponents.NetworkType 1.0
 import "components"
 
 Rectangle {
@@ -90,7 +90,7 @@ Rectangle {
         z: 1
     }
 
-    // card with monero logo
+    // card with lorentz logo
     Column {
         visible: true
         z: 2

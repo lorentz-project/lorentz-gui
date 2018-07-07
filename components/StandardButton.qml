@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -29,14 +29,14 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 
-import "../components" as MoneroComponents
+import "../components" as LorentzComponents
 
 Item {
     id: button
     property string rightIcon: ""
     property string rightIconInactive: ""
     property string icon: ""
-    property string textColor: button.enabled? MoneroComponents.Style.buttonTextColor: MoneroComponents.Style.buttonTextColorDisabled
+    property string textColor: button.enabled? LorentzComponents.Style.buttonTextColor: LorentzComponents.Style.buttonTextColorDisabled
     property string textAlign: rightIcon !== "" ? "left" : "center"
     property bool small: false
     property alias text: label.text
@@ -74,7 +74,7 @@ Item {
         anchors.right: parent.right
         height: parent.height - 1
         radius: 3
-        color: parent.enabled ? MoneroComponents.Style.buttonBackgroundColor : MoneroComponents.Style.buttonBackgroundColorDisabled
+        color: parent.enabled ? LorentzComponents.Style.buttonBackgroundColor : LorentzComponents.Style.buttonBackgroundColorDisabled
         border.width: parent.focus ? 1 : 0
 
         MouseArea {
@@ -103,7 +103,7 @@ Item {
         anchors.right: parent.right
         horizontalAlignment: textAlign === "center" ? Text.AlignHCenter : Text.AlignLeft
         anchors.leftMargin: textAlign === "center" ? 0 : 11
-        font.family: MoneroComponents.Style.fontBold.name
+        font.family: LorentzComponents.Style.fontBold.name
         font.bold: true
         font.pixelSize: buttonArea.pressed ? button.fontSize - 1 : button.fontSize
         color: parent.textColor

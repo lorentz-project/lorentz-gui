@@ -1,4 +1,4 @@
-// Copyright (c) 2018, The Monero Project
+// Copyright (c) 2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -60,7 +60,7 @@ QVariant SubaddressModel::data(const QModelIndex &index, int role) const
     if (!index.isValid() || index.row() < 0 || (unsigned)index.row() >= m_subaddress->count())
         return {};
 
-    Monero::SubaddressRow * sr = m_subaddress->getRow(index.row());
+    Lorentz::SubaddressRow * sr = m_subaddress->getRow(index.row());
     if (!sr)
         return {};
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -29,7 +29,7 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 
-import "../components" as MoneroComponents
+import "../components" as LorentzComponents
 
 RowLayout {
     id: checkBox
@@ -59,9 +59,9 @@ RowLayout {
             color: "transparent"
             border.color:
                 if(checkBox.checked){
-                    return MoneroComponents.Style.inputBorderColorActive;
+                    return LorentzComponents.Style.inputBorderColorActive;
                 } else {
-                    return MoneroComponents.Style.inputBorderColorInActive;
+                    return LorentzComponents.Style.inputBorderColorInActive;
                 }
         }
 
@@ -90,9 +90,9 @@ RowLayout {
 
         Text {
             id: label
-            font.family: MoneroComponents.Style.fontRegular.name
+            font.family: LorentzComponents.Style.fontRegular.name
             font.pixelSize: checkBox.fontSize
-            color: MoneroComponents.Style.defaultFontColor
+            color: LorentzComponents.Style.defaultFontColor
             wrapMode: Text.Wrap
             Layout.fillWidth: true
             anchors.left: backgroundRect.right

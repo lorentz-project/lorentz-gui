@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -28,7 +28,7 @@
 
 import QtQuick 2.0
 
-import "../components" as MoneroComponents
+import "../components" as LorentzComponents
 
 Item {
     id: item
@@ -36,10 +36,10 @@ Item {
 
     property alias placeholderText: placeholderLabel.text
     property bool placeholderCenter: false
-    property string placeholderFontFamily: MoneroComponents.Style.fontRegular.name
+    property string placeholderFontFamily: LorentzComponents.Style.fontRegular.name
     property bool placeholderFontBold: false
     property int placeholderFontSize: 18 * scaleRatio
-    property string placeholderColor: MoneroComponents.Style.defaultFontColor
+    property string placeholderColor: LorentzComponents.Style.defaultFontColor
     property real placeholderOpacity: 0.35
 
     property alias validator: input.validator
@@ -52,9 +52,9 @@ Item {
     property bool copyButton: false
     property string borderColor: {
         if(input.activeFocus){
-            return MoneroComponents.Style.inputBorderColorActive;
+            return LorentzComponents.Style.inputBorderColorActive;
         } else {
-            return MoneroComponents.Style.inputBorderColorInActive;
+            return LorentzComponents.Style.inputBorderColorInActive;
         }
     }
     property bool borderDisabled: false
@@ -106,11 +106,11 @@ Item {
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.topMargin: 2 * scaleRatio
-        font.family: MoneroComponents.Style.fontLight.name
+        font.family: LorentzComponents.Style.fontLight.name
         font.pixelSize: labelFontSize
         font.bold: labelFontBold
         textFormat: Text.RichText
-        color: MoneroComponents.Style.defaultFontColor
+        color: LorentzComponents.Style.defaultFontColor
         onLinkActivated: item.labelLinkActivated()
 
         MouseArea {
@@ -120,7 +120,7 @@ Item {
         }
     }
 
-    MoneroComponents.LabelButton {
+    LorentzComponents.LabelButton {
         id: copyButtonId
         text: qsTr("Copy")
         anchors.right: parent.right
@@ -187,11 +187,11 @@ Item {
             anchors.topMargin: 8 * scaleRatio
             anchors.left: parent.left
             anchors.leftMargin: 12 * scaleRatio
-            source: "../images/moneroIcon-28x28.png"
+            source: "../images/lorentzIcon-28x28.png"
             visible: false
         }
 
-        MoneroComponents.Input {
+        LorentzComponents.Input {
             id: input
             anchors.fill: parent
             anchors.leftMargin: inlineIcon.visible ? 38 : 0
@@ -202,7 +202,7 @@ Item {
             onTextChanged: item.textUpdated()
         }
 
-        MoneroComponents.InlineButton {
+        LorentzComponents.InlineButton {
             id: inlineButtonId
             visible: item.inlineButtonText ? true : false
             anchors.right: parent.right

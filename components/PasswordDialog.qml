@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 //
 // All rights reserved.
 //
@@ -33,7 +33,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls.Styles 1.4
 import QtQuick.Window 2.0
 
-import "../components" as MoneroComponents
+import "../components" as LorentzComponents
 
 Item {
     id: root
@@ -88,9 +88,9 @@ Item {
                 Layout.fillWidth: true
 
                 font.pixelSize: 16 * scaleRatio
-                font.family: MoneroComponents.Style.fontLight.name
+                font.family: LorentzComponents.Style.fontLight.name
 
-                color: MoneroComponents.Style.defaultFontColor
+                color: LorentzComponents.Style.defaultFontColor
             }
 
             TextField {
@@ -100,14 +100,14 @@ Item {
                 anchors.left: parent.left
                 horizontalAlignment: TextInput.AlignLeft
                 verticalAlignment: TextInput.AlignVCenter
-                font.family: MoneroComponents.Style.fontLight.name
+                font.family: LorentzComponents.Style.fontLight.name
                 font.pixelSize: 24 * scaleRatio
                 echoMode: TextInput.Password
                 KeyNavigation.tab: okButton
                 bottomPadding: 10
                 leftPadding: 10
                 topPadding: 10
-                color: MoneroComponents.Style.defaultFontColor
+                color: LorentzComponents.Style.defaultFontColor
 
                 background: Rectangle {
                     radius: 2
@@ -144,7 +144,7 @@ Item {
                 Layout.topMargin: 16
                 Layout.alignment: Qt.AlignRight
 
-                MoneroComponents.StandardButton {
+                LorentzComponents.StandardButton {
                     id: cancelButton
                     small: true
                     text: qsTr("Cancel") + translationManager.emptyString
@@ -155,7 +155,7 @@ Item {
                     }
                 }
 
-                MoneroComponents.StandardButton {
+                LorentzComponents.StandardButton {
                     id: okButton
                     small: true
                     text: qsTr("Continue")

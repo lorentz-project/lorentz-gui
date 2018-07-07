@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The Lorentz Project
 // 
 // All rights reserved.
 // 
@@ -31,7 +31,7 @@ import QtQuick.Controls 1.4
 import QtQuick.Controls.Styles 1.4
 import QtQuick.Layouts 1.1
 import QtQuick.Dialogs 1.2
-import moneroComponents.Clipboard 1.0
+import lorentzComponents.Clipboard 1.0
 import "../version.js" as Version
 import "../components"
 import "." 1.0
@@ -90,7 +90,7 @@ Rectangle {
                         Layout.topMargin: 12 * scaleRatio
                         Layout.preferredWidth: statusRect.width - 80
                         Layout.leftMargin: 6
-                        text: qsTr("WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy." + translationManager.emptyString)
+                        text: qsTr("WARNING: Do not reuse your Lorentz keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy." + translationManager.emptyString)
                         wrapMode: Text.Wrap
                         font.family: Style.fontRegular.name
                         font.pixelSize: 15 * scaleRatio
@@ -252,7 +252,7 @@ Rectangle {
         seedText.text = currentWallet.seed
 
         if(typeof currentWallet != "undefined") {
-            viewOnlyQRCode.source = "image://qrcode/monero:" + currentWallet.address+"?secret_view_key="+currentWallet.secretViewKey+"&restore_height="+currentWallet.restoreHeight
+            viewOnlyQRCode.source = "image://qrcode/lorentz:" + currentWallet.address+"?secret_view_key="+currentWallet.secretViewKey+"&restore_height="+currentWallet.restoreHeight
             fullWalletQRCode.source = viewOnlyQRCode.source +"&secret_spend_key="+currentWallet.secretSpendKey
 
             if(currentWallet.viewOnly) {

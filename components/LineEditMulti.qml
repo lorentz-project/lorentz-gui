@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2015, The Monero Project
+// Copyright (c) 2014-2015, The Lorentz Project
 //
 // All rights reserved.
 //
@@ -29,7 +29,7 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 
-import "../components" as MoneroComponents
+import "../components" as LorentzComponents
 
 ColumnLayout {
     id: lineditmulti
@@ -64,21 +64,21 @@ ColumnLayout {
             id: inputLabel
             anchors.top: parent.top
             anchors.left: parent.left
-            font.family: MoneroComponents.Style.fontRegular.name
+            font.family: LorentzComponents.Style.fontRegular.name
             font.pixelSize: 16 * scaleRatio
             font.bold: labelFontBold
             textFormat: Text.RichText
-            color: MoneroComponents.Style.defaultFontColor
+            color: LorentzComponents.Style.defaultFontColor
             onLinkActivated: inputLabelLinkActivated()
         }
 
-        MoneroComponents.LabelButton {
+        LorentzComponents.LabelButton {
             id: labelButton
             onClicked: labelButtonClicked()
             visible: labelButtonVisible
         }
 
-        MoneroComponents.LabelButton {
+        LorentzComponents.LabelButton {
             id: copyButtonId
             visible: copyButton && multiLine.text !== ""
             text: qsTr("Copy")
@@ -94,7 +94,7 @@ ColumnLayout {
         }
     }
 
-    MoneroComponents.InputMulti {
+    LorentzComponents.InputMulti {
         id: multiLine
         readOnly: false
         addressValidation: true
@@ -113,8 +113,8 @@ ColumnLayout {
             anchors.left: parent.left
             anchors.leftMargin: 10 * scaleRatio
             opacity: 0.35
-            color: MoneroComponents.Style.defaultFontColor
-            font.family: MoneroComponents.Style.fontRegular.name
+            color: LorentzComponents.Style.defaultFontColor
+            font.family: LorentzComponents.Style.fontRegular.name
             font.pixelSize: 18 * scaleRatio
             text: ""
             z: 3
@@ -125,11 +125,11 @@ ColumnLayout {
             border.width: 1
             border.color: {
               if(multiLine.error && multiLine.text !== ""){
-                  return MoneroComponents.Style.inputBorderColorInvalid;
+                  return LorentzComponents.Style.inputBorderColorInvalid;
               } else if(multiLine.activeFocus){
-                  return MoneroComponents.Style.inputBorderColorActive;
+                  return LorentzComponents.Style.inputBorderColorActive;
               } else {
-                  return MoneroComponents.Style.inputBorderColorInActive;
+                  return LorentzComponents.Style.inputBorderColorInActive;
               }
             }
             radius: 4

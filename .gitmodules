@@ -1,0 +1,4 @@
+[submodule "lorentz"]
+	path = lorentz
+	url = https://github.com/lorentz-project/lorentz.git
+	branch = dev

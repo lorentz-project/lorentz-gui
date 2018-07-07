@@ -1,6 +1,6 @@
 #!/bin/bash
 LORENTZ_URL=https://github.com/lorentz-project/lorentz.git
-LORENTZ_BRANCH=master
+LORENTZ_BRANCH=dev
 
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -17,7 +17,7 @@ if [ ! -d $LORENTZ_DIR/src ]; then
 fi
 git submodule update --remote
 git -C $LORENTZ_DIR fetch
-git -C $LORENTZ_DIR checkout v0.12.2.0
+git -C $LORENTZ_DIR checkout dev
 
 # get lorentz core tag
 get_tag

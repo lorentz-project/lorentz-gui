@@ -2693,7 +2693,7 @@ Kaze de Elspezpruvo, vi ne bezonas precizi la ricevantan adreson.</translation>
     <message>
         <location filename="../main.qml" line="862"/>
         <source>This address received %1 lorentz, with %2 confirmation(s).</source>
-        <translation>Tiu adreso ricevis %1 lorentzjn, kun %2 konfirmo(j)</translation>
+        <translation>Tiu adreso ricevis %1 lorentzn, kun %2 konfirmo(j)</translation>
     </message>
     <message>
         <location filename="../main.qml" line="885"/>
